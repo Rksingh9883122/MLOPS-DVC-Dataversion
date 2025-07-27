@@ -10,10 +10,14 @@ data = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie'],
 
 df = pd.DataFrame(data)
 
-# Append new row
+# Append new row for 2nd version
 new_row = {'Name': 'David', 'Age': 28, 'City': 'San Francisco'}
 df.loc[len(df.index)] = new_row
 print("DataFrame after appending new row:")
+
+# Append new row for 3rd version
+new_row = {'Name': 'Eve', 'Age': 22, 'City': 'Seattle'}
+df.loc[len(df.index)] = new_row
 
 # Ensure directory exist
 data_dir = 'data'
