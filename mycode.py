@@ -1,11 +1,19 @@
 import pandas as pd
 import os
 
-data = {'Name': ['Alice', 'Bob', 'Charlie'],
-        'Age': [25, 30, 35],
-        'City': ['New York', 'Los Angeles', 'Chicago']}
+# Convert dictionary to DataFrame
+data = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie'],
+                     'Age': [25, 30, 35],
+                     'City': ['New York', 'Los Angeles', 'Chicago']})
+
+
 
 df = pd.DataFrame(data)
+
+# Append new row
+new_row = {'Name': 'David', 'Age': 28, 'City': 'San Francisco'}
+df.loc[len(df.index)] = new_row
+print("DataFrame after appending new row:")
 
 # Ensure directory exist
 data_dir = 'data'
