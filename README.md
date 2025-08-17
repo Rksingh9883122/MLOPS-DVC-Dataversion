@@ -51,8 +51,99 @@ git commit -m "Add preprocessing stage"
 
 dvc repro
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Features Comparison</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    caption {
+      caption-side: top;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
 
-![alt text](image.png)
+  <h1>📊 Key Features Comparison</h1>
+
+  <table>
+    <caption>Git vs Git LFS vs DVC</caption>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Git</th>
+        <th>Git LFS</th>
+        <th>DVC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Large file tracking</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Data pipelines</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes (dvc.yaml)</td>
+      </tr>
+      <tr>
+        <td>Remote storage</td>
+        <td>Limited to Git remotes</td>
+        <td>Yes</td>
+        <td>Yes (S3, GCS, Azure, SSH)</td>
+      </tr>
+      <tr>
+        <td>Metrics & plots</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes (dvc metrics, plots)</td>
+      </tr>
+      <tr>
+        <td>Reproducibility</td>
+        <td>Partial</td>
+        <td>No</td>
+        <td>Full</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
 
 metrics:
   - metrics.json
