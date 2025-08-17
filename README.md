@@ -1,7 +1,5 @@
 # MLOPS-DVC-Dataversion
 This repor represent idea of Data versioning using DVC tool
-# MLOPS-DVC-Dataversion
-This repor represent idea of Data versioning using DVC tool
 # 📦 Data Versioning with DVC
 
 Streamline your machine learning workflows by versioning data and models with DVC (Data Version Control). Keep your Git history lean, track large files seamlessly, and reproduce experiments end to end.
